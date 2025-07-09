@@ -208,8 +208,7 @@ nav {
 }
 
 .section__title {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     color: rgb(36, 62, 99);
     margin: 16px 0;
     font-size: 48px;
@@ -419,10 +418,18 @@ nav {
 
 .values__img--wrapper {
     border-radius: 50%;
-    background-color: #9ae6b4;
     padding: 8px;
     display: flex;
-    justify-content: center;align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.value:nth-child(1) .values__img--wrapper {
+    background-color: #feb2b2;
+}
+
+.value:nth-child(2) .values__img--wrapper {
+    background-color: #9ae6b4;
 }
 
 .values__img {
@@ -448,4 +455,99 @@ nav {
 
 .value__img {
     width: 100%;
+}
+
+
+/* Pricing */
+
+#pricing {
+    padding: 0 32px;
+}
+.plans {
+    display: flex;
+    margin: 48px 0;
+    justify-content: space-between;
+}
+
+.plan {
+    border: 2px solid rgb(229, 231, 235) ;
+    border-radius: 5%;
+}
+
+.plan__top, .plan__middle{
+    padding: 32px;
+    border-bottom: 2px solid rgb(229, 231, 235);
+    text-align: center;
+}
+
+.plan__name, .plan__price,
+.plan__duration {
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.plan__name {
+    font-size: 20px;
+}
+
+.plan__price {
+    font-size: 40px;
+    margin: 8px 0;
+}
+
+.plan__duration {
+    color: #a0aec0;
+}
+
+.plan__middle {
+    text-align: center;
+}
+
+.plan__feature {
+    margin-top: 20px;
+    color: #718096;
+    font-weight: 500;
+}
+
+.plan__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan__btn {
+    margin: 32px 64px;
+    padding: 16px 64px;
+    border-radius: 500px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.plan:nth-child(1) .plan__btn {
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+
+}
+
+.plan:nth-child(2) {
+    background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+
+}
+
+.plan:nth-child(2) .plan__btn {
+     color: #6415ff;
+    background-color: #f7fafc;
+}
+
+.plan:nth-child(2) .plan__feature, 
+.plan:nth-child(2) .plan__price,
+.plan:nth-child(2) .plan__duration,
+.plan:nth-child(2) .plan__name {
+    color: #f7fafc;
+}
+
+.plan:nth-child(3) .plan__btn {
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
 }
