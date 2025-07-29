@@ -202,8 +202,7 @@ nav {
 }
 
 .section__tag {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     color: #6415ff;
 }
 
@@ -464,14 +463,17 @@ nav {
     padding: 0 32px;
 }
 .plans {
-    display: flex;
     margin: 48px 0;
-    justify-content: space-between;
+    display: flex;
 }
 
 .plan {
     border: 2px solid rgb(229, 231, 235) ;
     border-radius: 5%;
+    margin: 0 16px;
+    width: calc(100%/3);
+    display: flex;
+    flex-direction: column;
 }
 
 .plan__top, .plan__middle{
@@ -551,3 +553,246 @@ nav {
     color: #f7fafc;
     background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
 }
+
+/* TESTIMONIALS */
+
+#testimonials {
+    padding: 0 32px;
+}
+
+.testimonial__row {
+    display: flex;
+}
+
+.testimonials__img {
+    width: 40%;
+}
+
+.testimonial__description {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 60%;
+    padding: 0 0 0 64px;
+}
+
+.testimonial {
+    margin: 32px 0;
+}
+
+.testimonial__rating {
+    color: rgba(246, 173, 85);
+}
+
+.testimonial__title {
+    margin: 24px 0;
+    color: #243e63;
+}
+
+.testimonial__para {
+    color: #4a5568;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.testimonial__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 0 0;
+}
+
+.testimonial__profile {
+    display: flex;
+}
+
+.testimonial__details {
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonial__name {
+    font-weight: 700;
+    font-size: 20px;
+    color: #243e63;
+    line-height: 1.5;
+}
+
+.testimonial__role {
+    font-weight: 500;
+    color: #7c8ba1;
+    line-height: 1.5;
+}
+
+.testimonial__img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.testimonial__btns {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial__btn {
+    border-radius: 50%;
+    border: none;
+    background-color: #edf2f7;
+    height: 50px;
+    width: 50px;
+    color: #6415ff;
+    margin: 0 12px;
+    transition: all 300ms;
+}
+
+.divider {
+    height: 24px;
+    width: 1px;
+    background-color: rgb(229, 231, 235);
+}
+    
+
+/* START */
+
+#start {
+    padding: 0 32px;
+}
+
+.start__container {
+    padding: 96px 0;
+    background-color: rgb(100, 21, 255);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 32px;
+    margin: 0 25px;
+}
+.start__title {
+    font-size: 30px;
+    color: #f7fafc;
+    font-weight: 700;
+    width: 50%;
+}
+
+.start__buttons {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.start__btn {
+    padding: 20px 40px;
+    border-radius: 500px;
+     color: #edf2f7;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.start__btn:nth-child(1) {
+    background-color: #f56565;
+    margin: 0 32px 0 0;
+   
+}
+
+.start__btn:nth-child(2) {
+    background-color: transparent;
+    border: solid;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(100, 21, 255);
+    padding: 96px 32px;
+}
+
+.footer__columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+}
+
+.footer__column--title {
+    color: #f7fafc;
+    font-weight: 700;
+}
+
+.footer__column--link {
+    font-size: 14px;
+    font-weight: 500;
+    color: #f7fafc;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.footer__column--link:nth-child(2) {
+    margin-top: 24px;
+}
+
+.footer__divider {
+    height: 2px;
+    width: 100%;
+    margin: 64px 0;
+    background: rgb(116, 44, 255);
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer__logo--img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer__logo--text {
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 12px;
+    color: #f7fafc;
+}
+
+.footer__copywright {
+    color: #f7fafc;
+}
+
+.footer__socials {
+    display: flex;
+    align-items: center;
+}
+
+.footer__social--link {
+    padding: 8px;
+    background-color: #f7fafc;
+    border-radius: 50%;
+    margin: 0 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
